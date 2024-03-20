@@ -19,6 +19,7 @@ const App = () => {
 
 
   useEffect(() => {
+    // console.log('s');
     $(document).ready(() => {
    
   $(document).ready(function(){
