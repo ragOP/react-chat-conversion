@@ -1,8 +1,7 @@
 import React,{useEffect} from 'react'
-import './css/style.css'
-// import './js/script.js'
+
 import staff from './images/staff.jpg'
-import profile from './images/staff.jpg'
+import profile from './images/profile.png'
 import styled from 'styled-components';
 import $ from 'jquery';
 const StyledParagraph = styled.p`
@@ -16,6 +15,7 @@ const StyledParagraph = styled.p`
 `;
 const App = () => {
  
+
 
 
   useEffect(() => {
@@ -391,12 +391,13 @@ const App = () => {
               <div id="msg2" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
                 <p className="text-md text-gray-800">I'm Julliette from Health Allowances.</p>
               </div>
-              <div id="msg3" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+              <div id="msg3" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit ">
                 <p className="text-md text-gray-800">Want to find out if you qualify for up a $5,800 Allowance? Tap Yes!</p>
               </div>
-              <div id="msg4" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+              <div id="msg4" className="mt-2 w-fit hidden">
                 <div className="">
-                  <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-12" type="button" data-form-step="1" data-form-value="Yes">Yes</button>
+                <button className="chat-button text-white font-bold bg-blue-500 rounded-lg py-3 px-12 flex-text" type="button" data-form-step="1" data-form-value="Yes">Yes</button>
+
                 </div>
               </div>
             </div>
@@ -426,10 +427,11 @@ const App = () => {
               <div id="msg7" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
                 <p className="text-md text-gray-800">Do you make less than $50,000/year? Tap Yes or No.</p>
               </div>
-              <div id="msg8" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
+              <div id="msg8" className="mt-2 ">
                 <div className="grid grid-rows-1 grid-cols-2 gap-x-3">
-                  <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8" type="button" data-form-step="2" data-form-value="Yes">Yes</button>
-                  <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8" type="button" data-form-step="2" data-form-value="No">No</button>
+
+                  <button className="chat-button text-white font-bold bg-blue-500 rounded-lg py-3 px-12 flex-text" type="button" data-form-step="2" data-form-value="Yes">Yes</button>
+                  <button className="chat-button text-white font-bold bg-blue-500 rounded-lg py-3 px-12 flex-text" type="button" data-form-step="2" data-form-value="No">No</button>
                 </div>
               </div>
             </div>
@@ -457,11 +459,12 @@ const App = () => {
               <div id="msg10" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
                 <p className="text-md text-gray-800">Are you on medicaid or medicare?</p>
               </div>
-              <div id="msg11" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-4">
+              <div id="msg11" className="mt-2">
+  <div className="grid grid-rows-1 grid-cols-2 gap-x-3">
     {/* <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8 funnel-complete-btn" type="button" data-form-step="3" data-form-value="No">No</button> */}
-    <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8" type="button" data-form-step="3" data-form-value="Medicaid">Medicaid</button>
-    <button className="chat-button text-white font-bold bg-blue-500 rounded-full py-3 px-8 funnel-complete-btn" type="button" data-form-step="3" data-form-value="Medicare">Medicare</button>
+    <button className="chat-button text-white font-bold bg-blue-500 rounded-lg py-3 px-12 flex justify-center items-center" type="button" data-form-step="3" data-form-value="Medicaid">Yes</button>
+<button className="chat-button text-white font-bold bg-blue-500 rounded-lg py-3 px-12 flex justify-center items-center" type="button" data-form-step="3" data-form-value="Medicare">No</button>
+
   </div>
 </div>
 
@@ -502,7 +505,7 @@ const App = () => {
               </div>
               <div id="msg15" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
                 <p className="text-md text-gray-800">You can use it for your grocery, rent, medical expenses, and so on.</p>
-              <p className="text-md text-gray-800">All you have to do is call this number below and let them know you are interested in the FREE health insurance that gets you the $6400 health credit</p> 
+          
               </div>
               <div id="msg16" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
               <StyledParagraph id="msg16approved" className="text-md text-gray-800 hidden">
@@ -513,7 +516,7 @@ const App = () => {
               </div>
               <div id="msg17" className="bg-gray-200 p-3 rounded-lg shadow-xs mt-2 w-fit hidden">
                 <p className="text-md text-gray-800 py-2">
-                <a id="PrimaryNumber" href="tel:18885170494" className="chat-button text-white font-bold bg-green-500 rounded-full py-3 px-8 hidden ttc-button"  style={{ whiteSpace: 'nowrap' }}>CALL (888) 517-0494</a>
+                <a id="PrimaryNumber" href="tel:18885170494" className="chat-button text-white font-bold bg-green-500 rounded-full py-3 px-8 hidden ttc-button"  style={{ whiteSpace: 'nowrap' }}>(888) 517-0494</a>
 <a id="DownsellNumber" href="tel:18885170494" className="chat-button text-white font-bold bg-green-500 rounded-full py-3 px-8 hidden" style={{ whiteSpace: 'nowrap' }}>CALL (888) 517-0494</a>
 
                 </p>
