@@ -3,6 +3,7 @@ import './css/style.css'
 // import './js/script.js'
 import staff from './images/staff.jpg'
 import profile from './images/profile.png'
+import profile from './images/profile.png'
 import styled from 'styled-components';
 import $ from 'jquery';
 
@@ -19,6 +20,7 @@ const App = () => {
 
 
   useEffect(() => {
+    // console.log('s');
     $(document).ready(() => {
 
       $(document).ready(function () {
